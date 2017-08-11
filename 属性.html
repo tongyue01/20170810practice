@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1"></div>
+<input type="text" value="张三" id="username">
+<script src="jquery-1.12.4.js"></script>
+<script>
+//    var oDiv1=document.getElementById("div1");//获取一个元素
+//    oDiv1.index = 5;//定义一个属性
+//    console.log(oDiv1.index)
+//    oDiv1.setAttribute("aa","1233");//设置一个属性（属性名，值）
+//    console.log(oDiv1.getAttribute("aa"));//获取属性值
+      $(function(){
+        $("#div1").attr("aa","123");//设置一个属性
+        console.log($("#div1").attr("aa"));//获取属性值
+        $("#div1").removeAttr("aa")
+        $("#div1").prop("bb","234");
+        console.log($("#div1").prop("bb"));
+        $("#div1").removeAttr("bb");
+        var oUsername= document.getElementById("username");
+//        console.log(oUsername.value);
+//        console.log(oUsername.getAttribute("value"));
+          console.log($("#username").val())//获取值
+//        $("#username").val("李四")//设置值
+
+
+    })
+</script>
+</body>
+</html>
